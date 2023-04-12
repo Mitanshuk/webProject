@@ -1,0 +1,64 @@
+ body{
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    margin: 0;
+    background: #222;
+    background-size: cover;
+    background-image: url(https://source.unsplash.com/1600x900/?dark);
+  }
+  .header{
+    text-align: center;
+    font-size: 4em;
+    color: darkgoldenrod;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .content{
+    height: 300px;
+    background: #000000d0 ;
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .quote_div{
+    height: 180px;
+    color: white;
+    /*background: red ;*/
+    display: block;
+    margin: auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'poppins';
+    text-align: center;
+    line-height: 35px;
+    text-shadow: 1px 1px 6px red;
+  }
+  .author_div{
+    /*background: yellowgreen;*/
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px yellowgreen;
+  }
+  button{
+    height: 30px;
+    width: 110px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid whitesmoke ;
+    color: white;
+    background: transparent;
+  }
+  button:hover{
+    color: black;
+    background: white;
+  }

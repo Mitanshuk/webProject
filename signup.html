@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>form local storage</title>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style type="text/css">
+    .body {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="vh-100 body">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+
+                <div class="mb-md-5 mt-md-4 pb-5">
+
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="uname">Email or Username</label>
+                    <input type="text" id="uname" class="form-control form-control-lg" />
+                  </div>
+
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="epwd">Please Enter Password</label>
+                    <input type="password" id="epwd" class="form-control form-control-lg" />
+                  </div>
+
+                  <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="cfpwd">Confirm Password</label>
+                    <input type="password" id="cfpwd" class="form-control form-control-lg" />
+                  </div>
+
+                  <button class="btn btn-outline-light btn-lg px-5" type="submit" onclick="createAccount()">Create Account</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+<!--     <script type="text/javascript">
+      function createAccount(){
+        var username=document.getElementById("uname").value
+        var password=document.getElementById("epwd").value
+        var pwd=document.getElementById("cfpwd").value
+        if(pwd==password){
+          console.log(username + password);
+          var data = { username: username, password: password };
+          var id = new Date().getTime();
+          localStorage.setItem(`data_${id}`, JSON.stringify(data));
+          window.alert("Account Created")
+          // window.location.href="loginpage.html"
+
+          Object.keys(localStorage).forEach(function(key) {
+            var data = JSON.parse(localStorage.getItem(key));
+            if (data.username == username) {
+              console.log(data);
+                // document.form.reset();
+                // console.log(key);
+              }
+            });
+        }
+        else{
+          console.log("Passowrd didn't matched")
+        }
+      }
+    </script> -->
+
+</html>
