@@ -35,6 +35,7 @@
                   <div class="form-outline form-white mb-4">
                     <label class="form-label" for="cfpwd">Confirm Password</label>
                     <input type="password" id="cfpwd" class="form-control form-control-lg" />
+                  <small class="text-secondary">*fields can't be blank</small>
                   </div>
 
                   <button class="btn btn-outline-light btn-lg px-5" type="submit" onclick="createAccount()">Create Account</button>
@@ -47,32 +48,4 @@
       </div>
     </section>
   </body>
-<!--     <script type="text/javascript">
-      function createAccount(){
-        var username=document.getElementById("uname").value
-        var password=document.getElementById("epwd").value
-        var pwd=document.getElementById("cfpwd").value
-        if(pwd==password){
-          console.log(username + password);
-          var data = { username: username, password: password };
-          var id = new Date().getTime();
-          localStorage.setItem(`data_${id}`, JSON.stringify(data));
-          window.alert("Account Created")
-          // window.location.href="loginpage.html"
-
-          Object.keys(localStorage).forEach(function(key) {
-            var data = JSON.parse(localStorage.getItem(key));
-            if (data.username == username) {
-              console.log(data);
-                // document.form.reset();
-                // console.log(key);
-              }
-            });
-        }
-        else{
-          console.log("Passowrd didn't matched")
-        }
-      }
-    </script> -->
-
 </html>
